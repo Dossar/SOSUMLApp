@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2017 Roy Van Liew
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context="org.sosuml.sosumlapp.FacebookListing">
+
+        <TextView
+            android:id="@+id/lblTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Facebook Posts"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/btnRefresh"
+            android:background="@drawable/refresh"
+            android:layout_below="@id/lblTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnRefresh">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:shrinkColumns="*">
+
+            <!-- Row 1 -->
+            <TableRow android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/imgResult0"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sos" />
+                <Button
+                    android:id="@+id/msgResult0"
+                    android:background="@drawable/border"
+                    android:text="@string/facebook_listing_click_refresh"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:lines="5"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:theme="@style/AppElements"
+                    android:textAllCaps="false"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <!-- Row 2 -->
+            <TableRow android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/imgResult1"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sos" />
+                <Button
+                    android:id="@+id/msgResult1"
+                    android:background="@drawable/border"
+                    android:text="@string/facebook_listing_click_refresh"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:lines="5"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:theme="@style/AppElements"
+                    android:textAllCaps="false"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <!-- Row 3 -->
+            <TableRow android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/imgResult2"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sos" />
+                <Button
+                    android:id="@+id/msgResult2"
+                    android:background="@drawable/border"
+                    android:text="@string/facebook_listing_click_refresh"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:lines="5"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:theme="@style/AppElements"
+                    android:textAllCaps="false"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <!-- Row 4 -->
+            <TableRow android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/imgResult3"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sos" />
+                <Button
+                    android:id="@+id/msgResult3"
+                    android:background="@drawable/border"
+                    android:text="@string/facebook_listing_click_refresh"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:lines="5"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:theme="@style/AppElements"
+                    android:textAllCaps="false"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <!-- Row 5 -->
+            <TableRow android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/imgResult4"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sos" />
+                <Button
+                    android:id="@+id/msgResult4"
+                    android:background="@drawable/border"
+                    android:text="@string/facebook_listing_click_refresh"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:lines="5"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:theme="@style/AppElements"
+                    android:textAllCaps="false"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <!-- More Table Rows can be put in here as needed. -->
+        </TableLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2017 Roy Van Liew
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context="org.sosuml.sosumlapp.EventInfo">
+
+        <TextView
+            android:id="@+id/eventInfoHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/event_info_header"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <!-- Event Information -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="1"
+            android:rowCount="4"
+            android:useDefaultMargins="true"
+            android:id="@+id/eventInfoGrid"
+            android:layout_below="@id/eventInfoHeader"
+            android:layout_centerHorizontal="true">
+
+            <!-- Event Title -->
+            <TextView
+                android:id="@+id/eventInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/event_info_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Event Date/Time -->
+            <TextView
+                android:id="@+id/eventInfoTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/event_info_time"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Event Location -->
+
+            <TextView
+                android:id="@+id/eventInfoLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/event_info_location"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Event Description -->
+            <TextView
+                android:id="@+id/eventInfoDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="@string/event_info_description"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </GridLayout>
+
+        <!-- Event Signup -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="1"
+            android:rowCount="2"
+            android:useDefaultMargins="true"
+            android:id="@+id/eventInfoBtnGrid"
+            android:layout_below="@id/eventInfoGrid"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/eventInfoBtnSignup"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                android:layout_gravity="center|fill"
+                android:layout_row="0"
+                android:text="@string/event_info_btn_signup" />
+
+            <Button
+                android:id="@+id/eventInfoBtnAddToCalendar"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                android:layout_gravity="center|fill"
+                android:layout_row="1"
+                android:text="@string/event_info_btn_addtocalendar" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>

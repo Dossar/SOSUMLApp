@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2017 Roy Van Liew
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context="org.sosuml.sosumlapp.MealForm">
+
+        <!-- HTML Text is set in the class -->
+        <TextView
+            android:id="@+id/mealFormDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="1"
+            android:rowCount="2"
+            android:useDefaultMargins="true"
+            android:id="@+id/mealFormGridLayout"
+            android:layout_below="@id/mealFormDescription"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/mealFormBtnRegister"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                android:layout_gravity="center|fill"
+                android:layout_row="0"
+                android:text="@string/meal_form_btn_register" />
+
+            <Button
+                android:id="@+id/mealFormBtnDonate"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                android:layout_gravity="center|fill"
+                android:layout_row="1"
+                android:text="@string/meal_form_btn_donate" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>

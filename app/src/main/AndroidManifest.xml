@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sosuml.sosumlapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Intro (Main) Page -->
+        <activity
+            android:name=".Intro"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- All other activities -->
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".RegisterForm"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MealForm"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MealShortTerms"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Events -->
+        <activity
+            android:name=".EventBridge"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EventListing"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EventInfo"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Facebook -->
+        <activity
+            android:name=".FacebookListing"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FacebookInfo"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Meta Data for Facebook Graphi API -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <!-- Meta Data for Google Stuff -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+</manifest>

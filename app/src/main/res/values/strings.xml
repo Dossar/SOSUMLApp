@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">SOSUML App</string>
+
+    <!-- Elements for the Intro Page -->
+    <string name="intro_header">About</string>
+    <string name="intro_description"><![CDATA[
+        <p>Support Our Students UMass Lowell (SOS) is a nonprofit organization dedicated to
+        reducing hunger experienced by low-income students pursuing higher education.</p>
+        <p>With this app you can request to donate a guest meal, see upcoming SOS events,
+        and see the latest facebook posts from SOS.</p>
+    ]]></string>
+    <string name="intro_btn_main_menu">Main Menu</string>
+
+    <!-- Elements for Main Menu -->
+    <string name="main_menu_header">Main Menu</string>
+    <string name="main_menu_btn_register">Register</string>
+    <string name="main_menu_btn_donate">Make Meal Donation</string>
+    <string name="main_menu_btn_events">SOS Events</string>
+    <string name="main_menu_btn_facebook">Facebook Posts</string>
+
+    <!-- Elements for Registration Page -->
+    <string name="register_form_header">Registration</string>
+    <string name="register_form_description">Please enter your name and UML student e-mail
+    for this app, and select an e-mail account configured on your phone for registration.</string>
+    <string name="register_form_name">Name:</string>
+    <string name="register_form_email">Student E-mail:</string>
+    <string name="register_form_btn_config">Select Email Account</string>
+    <string name="register_form_btn_register">Register</string>
+    <string name="register_form_btn_check">Am I Registered?</string>
+    <string name="register_form_step1_header">Step 1</string>
+    <string name="register_form_step2_header">Step 2</string>
+    <string name="register_form_step1_info">Please select an e-mail account on your phone.
+        This e-mail account will be used to send the message.</string>
+    <string name="register_form_step2_info">Please enter your name and UML student e-mail
+        for this app to identify yourself as a UMass Lowell student.</string>
+
+    <!-- Elements for Meal Short Terms -->
+    <string name="meal_short_terms_header">SOS Terms &amp; Conditions</string>
+    <string name="meal_short_terms_description"><![CDATA[
+        <p><i><b>Be advised</b></i> as the following terms &amp; conditions apply:</p>
+        <p>1.) We reserve the right to modify or replace these terms at any given time.
+            The material that is changed will be determined at our discretion.</p>
+        <p>2.) Support Our Students maintains a strict privacy policy. This extends not
+            only for current and potential clients, but donors as well. Confidentiality is
+            our number one priority.</p>
+        <p>3.) We have the right to deny anyone’s meal donation request as we see fit.</p>
+        <p>By clicking \"accept,\" <i>I agree to the terms and conditions</i> as outlined above.
+            If you have any questions about these terms,
+            please <a href=\"mailto:sosatuml@gmail.com\">contact us</a>.</p>
+    ]]></string>
+    <string name="meal_short_terms_btn_accept">Accept</string>
+    <string name="meal_short_terms_btn_decline">Decline</string>
+
+    <!-- Elements for the Meal Form Page -->
+    <string name="meal_form_description"><![CDATA[
+        <p>1.) By clicking Donate Meal, you are requesting to donate one of your guest meals.</p>
+        <p>2.) If you have not registered, please click the Register button.</p>
+        <p>3.) You may get a window from Google asking for your permission to use Gmail,
+            and selecting allow will let you be able to send your guest meal donation through
+            e-mail. After selecting allow, please click Donate Meal again.</p>
+    ]]></string>
+    <string name="meal_form_name">Name:</string>
+    <string name="meal_form_email">Student Email:</string>
+    <string name="meal_form_toast">Attempting to send...</string>
+    <string name="meal_form_error">Something went wrong in sending the meal donation.</string>
+    <string name="meal_form_donated">You already donated a meal this semester.</string>
+    <string name="meal_form_btn_config">Configure Email</string>
+    <string name="meal_form_btn_donate">Donate Meal</string>
+    <string name="meal_form_btn_help">Help</string>
+    <string name="meal_form_btn_return">Return</string>
+    <string name="meal_form_timer">Timer</string>
+    <string name="meal_form_placeholder">Test</string>
+    <string name="meal_form_btn_register">Register</string>
+
+    <!-- Elements for Event Bridge -->
+    <string name="event_bridge_description"><![CDATA[
+        <p>1.) You must register before you can look at the upcoming SOS events so you can
+            sign up to attend them if you wish to do so.</p>
+        <p>2.) You may get a window from Google asking for your permission to view your
+            calendars, and selecting allow will let you be able to see upcoming SOS events.
+            After selecting allow, please click the Refresh button.</p>
+    ]]></string>
+    <string name="event_bridge_btn_register">Register</string>
+    <string name="event_bridge_btn_events">Event Listing</string>
+    <string name="event_bridge_btn_return">Return</string>
+
+    <!-- Elements for Event Listing -->
+    <string name="event_listing_header">Upcoming SOS Events</string>
+    <string name="event_listing_btn_refresh">Refresh Results</string>
+    <string name="event_listing_result_empty">Click Refresh</string>
+    <string name="event_listing_description"><![CDATA[
+        <p>1.) Results are shown below. Tapping a result will bring you to another page with
+        more information about the event, and you can sign up for the event
+        or add it to your calendar.</p>
+        <p>2.) You may get a window from Google asking for your permission to manage your
+        calendars and/or manage your mail. Selecting allow will let you be able to sign up
+        for events and add events to your calendar. After selecting allow, please click
+        Sign Up or Add to Calendar again.</p>
+    ]]></string>
+
+    <!-- Elements for Event Info -->
+    <string name="event_info_header">Event Information</string>
+    <string name="event_info_title">Event Title</string>
+    <string name="event_info_time">Event Date/Time</string>
+    <string name="event_info_location">Event Location</string>
+    <string name="event_info_description">Event Description</string>
+    <string name="event_info_btn_return">Return</string>
+    <string name="event_info_btn_signup">Sign Up</string>
+    <string name="event_info_btn_addtocalendar">Add To My Calendar</string>
+
+    <!-- Elements for Facebook Listing -->
+    <string name="facebook_app_id">...</string>
+    <string name="facebook_app_secret">...</string>
+    <string name="facebook_user_id">...</string>
+    <string name="facebook_listing_click_refresh">Please Click Refresh</string>
+
+    <!-- Elements for Facebook Info -->
+
+    <!-- Elements for other stuff -->
+
+    <!-- Elements for Menu -->
+    <string name="menu_exit">Exit</string>
+    <string name="menu_return">Back</string>
+
+</resources>
